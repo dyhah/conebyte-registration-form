@@ -2,17 +2,37 @@
 <html>
 
 <head>
-<title>Registration Form</title>
+<title>Conebyte Registration</title>
 </head>
 <style>
 
-/* Add padding to containers */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: grey;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Padding for containers */
 .container {
-  padding: 16px;
+  padding: 48px;
   background-color: white;
 }
 
-/* Style for confirm button */
+/* Input fields */
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Confirm button */
 .confirmbutton {
   background-color: #04AA6D;
   color: white;
@@ -20,7 +40,8 @@
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  opacity: 0.9;
+  width: 100%;
+  opacity: 0.8;
 }
 
 .confirmbutton:hover {
@@ -29,19 +50,22 @@
 </style>
 
 <body>
-    <form>
+    <form action="process.php" method="post">
         <div class="container">
-            <h1>Conebyte Registration Form</h1>
+
+            <img style="display: block; margin: auto;" src="conebyte_logo.png" alt="Conebyte Logo">
+            <h1 style="text-align:center">Conebyte Registration</h1>
             <hr>
-            
+            <br>
+
             <label for="name"><b>Name</b></label>
             <br>
             <input type="text" placeholder="Enter name" name="name" id="name" required>
             <br><br>
 
-            <label for="phone"><b>Phone</b></label>
+            <label for="phone"><b>Phone Number</b></label>
             <br>
-            <input type="number" placeholder="Enter phone" name="phone" id="phone" required>
+            <input type="number" placeholder="Enter phone number (eg: 0123456789)" name="phone" id="phone" required>
             <br><br>
 
             <label for="sid"><b>Student ID</b></label>
@@ -69,9 +93,12 @@
             <input type="text" placeholder="Enter nationality" name="nationality" id="nationality" required>
             <br><br>
             
+            <hr>
             <button type="submit" class="confirmbutton">Confirm</button>
+            
         </div>
     </form>
+
 </body>
 
 </html>
