@@ -10,7 +10,6 @@ body {
   font-size: 20px;
   background-color: #5e98ab;
   background-image: linear-gradient(to bottom, #97d2e6 , #fddeff);
-
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -24,8 +23,11 @@ h1 {
 
 /* Container */
 .container {
-  padding: 48px;
+  margin: 50px;
+  padding: 50px;
   background-color: white;
+  min-width: 50vw;
+  border-radius: 50px; 
 }
 
 /* Input fields */
@@ -45,24 +47,6 @@ input[type="date"] {
   width: 30%;
 }
 
-select {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #000000;
-  outline: none
-}
-
-.form-row {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
 /* Confirm button */
 .confirmbutton {
   font-family: "Poppins", "Roboto", Arial, Helvetica, sans-serif;
@@ -74,6 +58,7 @@ select {
   cursor: pointer;
   width: 100%;
   opacity: 0.8;
+  border-radius: 10px; 
 }
 
 .confirmbutton:hover {
@@ -82,7 +67,7 @@ select {
 
 a {
   font-family: "Poppins", "Roboto", Arial, Helvetica, sans-serif;
-  color: blue
+  color: black
 }
 
 footer {
@@ -90,6 +75,6 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  color: black;
+  color: #7d7d7d;
   text-align: center;
 }
