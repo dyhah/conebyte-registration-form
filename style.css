@@ -47,10 +47,61 @@ input[type="date"] {
   width: 30%;
 }
 
+.date-input {
+  width: 50%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  border-width: 1px;
+  background-color: rgb(228, 238, 243);
+}
+
+.datepicker-container {
+  position: relative;
+  font-family: "Poppins", "Roboto", Arial, Helvetica, sans-serif; 
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 40px);
+  gap: 10px;
+  margin-block: 10px;
+}
+
+.dates button {
+  background: white;
+  color: rgb(3, 176, 234);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+}
+
+.dates button:hover {
+  background: rgb(244, 244, 244);
+  border: none
+}
+
+.dates button.selected {
+  background: rgb(0, 114, 145);
+  color: white;
+}
+
+.dates button.today {
+  background: rgb(220, 243, 251);
+  color: rgb(2, 135, 183);
+}
+
+.days span {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 /* Confirm button */
 .confirmbutton {
   font-family: "Poppins", "Roboto", Arial, Helvetica, sans-serif;
-  background-color: #04AA6D;
+  background-color: #04ab6e;
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
