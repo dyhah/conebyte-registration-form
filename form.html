@@ -21,15 +21,19 @@
             <input type="text" pattern="[A-Za-z ]*" class="name" placeholder="Enter name (text only)" name="name" id="name" required>
             <br><br>
 
-            <i class="ri-phone-fill"></i>
-            <label for="phone"><b>Phone Number</b></label>
-            <br>
-            <input type="number" pattern="[0-9]" placeholder="Enter phone number (eg: 0123456789)" name="phone" id="phone" required>
+            <div class="two-col">
+                <div>
+                    <i class="ri-phone-fill"></i>
+                    <label for="phone"><b>Phone Number</b></label>
+                    <input type="number" pattern="[0-9]" placeholder="Enter phone number (eg: 0123456789)" name="phone" id="phone" required>
+                </div>
 
-            <i class="ri-id-card-fill"></i>
-            <label for="sid"><b>Student ID</b></label>
-            <br>
-            <input type="number" pattern="[0-9]" placeholder="Enter student ID (eg: 12345678)" name="sid" id="sid" required>
+                <div>
+                    <i class="ri-id-card-fill"></i>
+                    <label for="sid"><b>Student ID</b></label>
+                    <input type="number" pattern="[0-9]" placeholder="Enter student ID (eg: 12345678)" name="sid" id="sid" required>
+                </div>
+            </div>
 
             <i class="ri-mail-fill"></i>
             <label for="email"><b>Email</b></label>
@@ -37,61 +41,64 @@
             <input type="email" placeholder="Enter email" name="email" id="email" required>
             <br><br>
 
-            <i class="ri-list-check"></i>
-            <label for="task"><b>Job Task</b></label>
-            <br>
-            <input type="text" pattern="[A-Za-z ]*" placeholder="Enter job task (text only)" name="task" id="task" required>
-            <br><br>
+            <div class="two-col">
+                <div>
+                    <i class="ri-list-check"></i>
+                    <label for="task"><b>Job Task</b></label>
+                    <br>
+                    <input type="text" pattern="[A-Za-z ]*" placeholder="Enter job task (text only)" name="task" id="task" required>
+                </div>
 
-            <div class="datepicker-container">
-                <input type="text" class="date-input" placeholder="Select Date of Birth">
-                
-                <div class="datepicker">
+                <div>
+                    <div class="datepicker-container">
+                        <input type="text" class="date-input" placeholder="Select Date of Birth">
+                        
+                        <div class="datepicker" hidden>
 
-                    <div class="datepicker-header">
-                        <button type="button"><</button>
-                        <div>
-                            <select class="month-input">
-                            <option>January</option>
-                            <option>February</option>
-                            <option>March</option>
-                            <option>April</option>
-                            <option>May</option>
-                            <option>June</option>
-                            <option>July</option>
-                            <option>August</option>
-                            <option>September</option>
-                            <option>October</option>
-                            <option>November</option>
-                            <option>December</option>
-                            </select>
-                            <input type="number" class="year-input" min="1900" max="2100">
+                            <div class="datepicker-header">
+                                <button type="button"><</button>
+                                <div>
+                                    <select class="month-input">
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                    </select>
+                                    <input type="number" class="year-input" min="1900" max="2100">
+                                </div>
+                                <button type="button">></button>
+                            </div>
+
+                            <div class="days">
+                                <span>Sun</span>
+                                <span>Mon</span>
+                                <span>Tue</span>
+                                <span>Wed</span>
+                                <span>Thu</span>
+                                <span>Fri</span>
+                                <span>Sat</span>
+                            </div>
+
+                            <div class="dates">
+                                <button type="button" disabled>1</button><button type="button" class="selected">2</button><button type="button" class="today">3</button><button type="button">4</button><button type="button">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button><button type="button">10</button><button type="button">11</button><button type="button">12</button><button type="button">13</button><button type="button">14</button><button type="button">15</button><button type="button">16</button><button type="button">17</button><button type="button">18</button><button type="button">19</button><button type="button">20</button><button type="button">21</button><button type="button">22</button><button type="button">23</button><button type="button">24</button><button type="button">25</button><button type="button">26</button><button type="button">27</button><button type="button">28</button><button type="button">29</button><button type="button">30</button>
+                            </div>
+
+                            <div class="datepicker-footer">
+                                <button type="button" class="cancel">CANCEL</button>
+                                <button type="button" class="select">SELECT</button>
+                            </div>
                         </div>
-                        <button type="button">></button>
                     </div>
-
-                    <div class="days">
-                        <span>Sun</span>
-                        <span>Mon</span>
-                        <span>Tue</span>
-                        <span>Wed</span>
-                        <span>Thu</span>
-                        <span>Fri</span>
-                        <span>Sat</span>
-                    </div>
-
-                    <div class="dates">
-                        <button type="button" disabled>1</button><button type="button" class="selected">2</button><button type="button" class="today">3</button><button type="button">4</button><button type="button">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button><button type="button">10</button><button type="button">11</button><button type="button">12</button><button type="button">13</button><button type="button">14</button><button type="button">15</button><button type="button">16</button><button type="button">17</button><button type="button">18</button><button type="button">19</button><button type="button">20</button><button type="button">21</button><button type="button">22</button><button type="button">23</button><button type="button">24</button><button type="button">25</button><button type="button">26</button><button type="button">27</button><button type="button">28</button><button type="button">29</button><button type="button">30</button>
-                    </div>
-
-                    <div class="datepicker-footer">
-                        <button type="button" class="cancel">CANCEL</button>
-                        <button type="button" class="select">SELECT</button>
-                    </div>
-
                 </div>
             </div>
-            <br><br>
             
             <i class="ri-earth-fill"></i>
             <label for="nationality"><b>Nationality</b></label>
